@@ -1,0 +1,16 @@
+{
+  "additionalFields": {
+    "layoutData": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "id": "variable",
+  "varName": "varName",
+  "value": {
+    "language": "spel",
+    "expression": "'value'"
+  },
+  "type": "Variable",
+  "branchParametersTemplate": []
+}

@@ -1,0 +1,107 @@
+{
+  "id": "embedded-streaming-s1",
+  "nodes": [
+    {
+      "id": "kafka",
+      "ref": {
+        "typ": "kafka",
+        "parameters": [
+          {
+            "name": "Topic",
+            "expression": {
+              "language": "spel",
+              "expression": "'example-1'"
+            }
+          },
+          {
+            "name": "Schema version",
+            "expression": {
+              "language": "spel",
+              "expression": "'latest'"
+            }
+          }
+        ]
+      },
+      "additionalFields": {
+        "description": null,
+        "layoutData": {
+          "x": -213,
+          "y": -272
+        }
+      },
+      "type": "Source"
+    },
+    {
+      "id": "kafka 1",
+      "ref": {
+        "typ": "kafka",
+        "parameters": [
+          {
+            "name": "Topic",
+            "expression": {
+              "language": "spel",
+              "expression": "'example-1'"
+            }
+          },
+          {
+            "name": "Schema version",
+            "expression": {
+              "language": "spel",
+              "expression": "'latest'"
+            }
+          },
+          {
+            "name": "Key",
+            "expression": {
+              "language": "spel",
+              "expression": ""
+            }
+          },
+          {
+            "name": "Raw editor",
+            "expression": {
+              "language": "spel",
+              "expression": "false"
+            }
+          },
+          {
+            "name": "myInteger",
+            "expression": {
+              "language": "spel",
+              "expression": ""
+            }
+          }
+        ]
+      },
+      "endResult": null,
+      "isDisabled": null,
+      "additionalFields": {
+        "description": null,
+        "layoutData": {
+          "x": -215,
+          "y": -36
+        }
+      },
+      "type": "Sink"
+    }
+  ],
+  "edges": [
+    {
+      "from": "kafka",
+      "to": "kafka 1",
+      "edgeType": null
+    }
+  ],
+  "properties": {
+    "isFragment": false,
+    "additionalFields": {
+      "description": null,
+      "properties": {
+        "parallelism": "1"
+      },
+      "metaDataType": "LiteStreamMetaData"
+    }
+  },
+  "processingType": "streaming-lite-embedded",
+  "category": "StreamingLite"
+}

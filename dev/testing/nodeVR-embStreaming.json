@@ -1,0 +1,236 @@
+{
+  "outgoingEdges": [
+    {
+      "from": "variable",
+      "to": "kafka 1",
+      "edgeType": null
+    }
+  ],
+  "nodeData": {
+    "id": "variable",
+    "varName": "varName",
+    "value": {
+      "language": "spel",
+      "expression": "'value'"
+    },
+    "additionalFields": {
+      "description": null,
+      "layoutData": {
+        "x": -207,
+        "y": -150
+      }
+    },
+    "type": "Variable"
+  },
+  "processProperties": {
+    "isFragment": false,
+    "additionalFields": {
+      "description": null,
+      "properties": {
+        "parallelism": "1"
+      },
+      "metaDataType": "LiteStreamMetaData"
+    }
+  },
+  "branchVariableTypes": {},
+  "variableTypes": {
+    "UTIL": {
+      "display": "util",
+      "type": "TypedClass",
+      "refClazzName": "pl.touk.nussknacker.engine.util.functions.util$",
+      "params": []
+    },
+    "NUMERIC": {
+      "display": "numeric",
+      "type": "TypedClass",
+      "refClazzName": "pl.touk.nussknacker.engine.util.functions.numeric$",
+      "params": []
+    },
+    "DATE_FORMAT": {
+      "display": "dateFormat",
+      "type": "TypedClass",
+      "refClazzName": "pl.touk.nussknacker.engine.util.functions.dateFormat$",
+      "params": []
+    },
+    "CONV": {
+      "display": "conversion",
+      "type": "TypedClass",
+      "refClazzName": "pl.touk.nussknacker.engine.util.functions.conversion$",
+      "params": []
+    },
+    "GEO": {
+      "display": "geo",
+      "type": "TypedClass",
+      "refClazzName": "pl.touk.nussknacker.engine.util.functions.geo$",
+      "params": []
+    },
+    "COLLECTION": {
+      "display": "collection",
+      "type": "TypedClass",
+      "refClazzName": "pl.touk.nussknacker.engine.util.functions.collection$",
+      "params": []
+    },
+    "inputMeta": {
+      "display": "InputMeta[String]",
+      "type": "TypedObjectTypingResult",
+      "fields": {
+        "key": {
+          "display": "String",
+          "type": "TypedClass",
+          "refClazzName": "java.lang.String",
+          "params": []
+        },
+        "topic": {
+          "display": "String",
+          "type": "TypedClass",
+          "refClazzName": "java.lang.String",
+          "params": []
+        },
+        "partition": {
+          "display": "Integer",
+          "type": "TypedClass",
+          "refClazzName": "java.lang.Integer",
+          "params": []
+        },
+        "offset": {
+          "display": "Long",
+          "type": "TypedClass",
+          "refClazzName": "java.lang.Long",
+          "params": []
+        },
+        "timestamp": {
+          "display": "Long",
+          "type": "TypedClass",
+          "refClazzName": "java.lang.Long",
+          "params": []
+        },
+        "timestampType": {
+          "display": "TimestampType",
+          "type": "TypedClass",
+          "refClazzName": "org.apache.kafka.common.record.TimestampType",
+          "params": []
+        },
+        "headers": {
+          "display": "Map[String,String]",
+          "type": "TypedClass",
+          "refClazzName": "java.util.Map",
+          "params": [
+            {
+              "display": "String",
+              "type": "TypedClass",
+              "refClazzName": "java.lang.String",
+              "params": []
+            },
+            {
+              "display": "String",
+              "type": "TypedClass",
+              "refClazzName": "java.lang.String",
+              "params": []
+            }
+          ]
+        },
+        "leaderEpoch": {
+          "display": "Integer",
+          "type": "TypedClass",
+          "refClazzName": "java.lang.Integer",
+          "params": []
+        }
+      },
+      "refClazzName": "pl.touk.nussknacker.engine.kafka.source.InputMeta",
+      "params": [
+        {
+          "display": "Unknown",
+          "type": "Unknown",
+          "refClazzName": "java.lang.Object",
+          "params": []
+        }
+      ]
+    },
+    "input": {
+      "display": "Record{myInteger: Long}",
+      "type": "TypedObjectTypingResult",
+      "fields": {
+        "myInteger": {
+          "display": "Long",
+          "type": "TypedClass",
+          "refClazzName": "java.lang.Long",
+          "params": []
+        }
+      },
+      "refClazzName": "java.util.Map",
+      "params": [
+        {
+          "display": "String",
+          "type": "TypedClass",
+          "refClazzName": "java.lang.String",
+          "params": []
+        },
+        {
+          "display": "Long",
+          "type": "TypedClass",
+          "refClazzName": "java.lang.Long",
+          "params": []
+        }
+      ]
+    },
+    "DATE": {
+      "display": "date",
+      "type": "TypedClass",
+      "refClazzName": "pl.touk.nussknacker.engine.util.functions.date$",
+      "params": []
+    },
+    "meta": {
+      "display": "Record{processName: String, properties: Record{parallelism: String}}",
+      "type": "TypedObjectTypingResult",
+      "fields": {
+        "processName": {
+          "display": "String",
+          "type": "TypedClass",
+          "refClazzName": "java.lang.String",
+          "params": []
+        },
+        "properties": {
+          "display": "Record{parallelism: String}",
+          "type": "TypedObjectTypingResult",
+          "fields": {
+            "parallelism": {
+              "display": "String",
+              "type": "TypedClass",
+              "refClazzName": "java.lang.String",
+              "params": []
+            }
+          },
+          "refClazzName": "java.util.Map",
+          "params": [
+            {
+              "display": "String",
+              "type": "TypedClass",
+              "refClazzName": "java.lang.String",
+              "params": []
+            },
+            {
+              "display": "String",
+              "type": "TypedClass",
+              "refClazzName": "java.lang.String",
+              "params": []
+            }
+          ]
+        }
+      },
+      "refClazzName": "java.util.Map",
+      "params": [
+        {
+          "display": "String",
+          "type": "TypedClass",
+          "refClazzName": "java.lang.String",
+          "params": []
+        },
+        {
+          "display": "EmptyUnion",
+          "type": "TypedUnion",
+          "union": []
+        }
+      ]
+    }
+  }
+}

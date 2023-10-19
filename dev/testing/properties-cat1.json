@@ -1,0 +1,17 @@
+{
+  "id": "flink-streaming-s1",
+  "isFragment": false,
+  "additionalFields": {
+    "description": null,
+    "properties": {
+      "parallelism": "1",
+      "checkpointIntervalInSeconds": "",
+      "maxEvents": "",
+      "numberOfThreads": "1",
+      "spillStateToDisk": "true",
+      "environment": "test",
+      "useAsyncInterpretation": ""
+    },
+    "metaDataType": "StreamMetaData"
+  }
+}
